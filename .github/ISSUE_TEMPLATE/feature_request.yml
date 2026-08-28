@@ -1,0 +1,54 @@
+name: Feature request
+description: Suggest a focused improvement for IMSYP Auto Reader
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposals should preserve the plugin's small security footprint and avoid unnecessary external dependencies or public endpoints.
+
+  - type: textarea
+    id: need
+    attributes:
+      label: Problem or need
+      description: What problem would this feature solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior you would like to add or change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any workaround or alternative design you considered.
+
+  - type: input
+    id: ojs_versions
+    attributes:
+      label: Relevant OJS version(s)
+      placeholder: e.g. 3.5.x
+
+  - type: textarea
+    id: security
+    attributes:
+      label: Security and compatibility considerations
+      description: Note any effect on roles, permissions, networking, database access, background jobs, or supported OJS versions.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked existing issues for a similar request.
+          required: true
+        - label: This request does not require exposing credentials or sensitive data.
+          required: true
